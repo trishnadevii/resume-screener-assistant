@@ -27,9 +27,11 @@ def create_app():
     # Register API routes
     from app.routes.health_routes import health_bp
     from app.routes.screening_routes import screening_bp
+    from app.routes.history_routes import history_bp
 
     app.register_blueprint(health_bp, url_prefix="/api")
     app.register_blueprint(screening_bp, url_prefix="/api")
+    app.register_blueprint(history_bp, url_prefix="/api")
 
     # Import models and create database tables
     from app.models import Analysis
