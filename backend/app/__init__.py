@@ -24,10 +24,14 @@ def create_app():
         resources={r"/api/*": {"origins": "http://localhost:5173"}}
     )
 
+    # Register API routes
     from app.routes.health_routes import health_bp
-    app.register_blueprint(health_bp, url_prefix="/api")    
-    
-    
+    from app.routes.screening_routes import screening_bp
+
+    app.register_blueprint(health_bp, url_prefix="/api")
+    app.register_blueprint(screening_bp, url_prefix="/api")
+
+    # Import models and create database tables
     from app.models import Analysis
 
     with app.app_context():

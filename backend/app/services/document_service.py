@@ -1,8 +1,8 @@
 
 from io import BytesIO
 
-import fitz  # PyMuPDF
 from docx import Document
+import pymupdf
 
 
 MAX_FILE_SIZE = 5 * 1024 * 1024  # 5 MB
@@ -66,7 +66,7 @@ def extract_resume_text(resume_text=None, uploaded_file=None):
 
 def _extract_pdf_text(file_bytes):
     try:
-        with fitz.open(stream=file_bytes, filetype="pdf") as pdf:
+        with pymupdf.open(stream=file_bytes, filetype="pdf") as pdf:
             if pdf.is_encrypted:
                 raise ValueError("Password-protected PDFs are not supported.")
 
