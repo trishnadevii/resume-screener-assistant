@@ -179,7 +179,7 @@ The AI generates the match assessment. The backend validates the returned struct
 
 
 
-## Application Screenshots
+## Application View
 
 ### 1. Dashboard
 The dashboard provides an overview of screening activity, including summary statistics and recent candidate analyses.
@@ -200,6 +200,10 @@ The History page displays previously saved screening reports. HR can search by c
 The detailed report displays the AI-generated match score, matching skills, skill gaps, and suggested interview questions for a candidate.
 
 ![Detailed Report](demo/DetailedReport.png)
+
+
+### Video: 
+[Resume Screener Assistant Demo Video](https://drive.google.com/file/d/1fXVFE0Xc1q4KBKZ2vlh6PyYhj-pHdYUf/view?usp=sharing)
 
 
 ## Author
