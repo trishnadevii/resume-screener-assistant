@@ -177,6 +177,31 @@ The AI generates the match assessment. The backend validates the returned struct
 - DOCX extraction currently focuses on paragraph text and may not extract content inside tables.
 - The application is designed as an internal assessment prototype; production deployment would require authentication, access controls, and a formal data-retention policy.
 
+
+
+## Application Screenshots
+
+### 1. Dashboard
+The dashboard provides an overview of screening activity, including summary statistics and recent candidate analyses.
+
+![Dashboard View](demo/Dashboard_View.png)
+
+### 2. New Screening
+The New Screening page allows HR to enter job details and candidate information. Both job descriptions and resumes can be provided through pasted text or PDF/DOCX uploads.
+
+![New Screening](demo/NewScreening.png)
+
+### 3. Screening History
+The History page displays previously saved screening reports. HR can search by candidate name, filter by match score, view reports, and delete records.
+
+![Screening History](demo/History.png)
+
+### 4. Detailed Screening Report
+The detailed report displays the AI-generated match score, matching skills, skill gaps, and suggested interview questions for a candidate.
+
+![Detailed Report](demo/DetailedReport.png)
+
+
 ## Author
 
 Trishna Devi 
